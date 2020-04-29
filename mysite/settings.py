@@ -127,8 +127,8 @@ STATICFILES_DIRS = [
     ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST = 'mail.smtp2go.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
+EMAIL_HOST_USER = 'info@codegnan.com'
+EMAIL_HOST_PASSWORD = 'pheonix'
 EMAIL_USE_TLS = True

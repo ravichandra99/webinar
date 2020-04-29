@@ -10,4 +10,12 @@ class JustUser(models.Model):
 	profession = models.CharField(max_length = 30,verbose_name = 'Profession')
 
 	def __str__(self):
-		return self.name
+		return self.fname+' '+self.lname
+
+class JustEdit(models.Model):
+	ref = models.CharField(max_length = 4)
+	subject = models.CharField(max_length = 100)
+	body = models.TextField()
+
+	def __str__(self):
+		return self.ref
