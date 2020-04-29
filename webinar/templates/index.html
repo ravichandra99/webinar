@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+  <div class="row">
+    <div class="col">
+    	<br><br><br>
+     	<img src="{% static 'img01.png' %}">
+    </div>
+    <div class="col">
+    	<form method="post">{% csrf_token %}
+    	{{ form|crispy }}
+    	<input class="btn btn-outline-info" type="submit" value="Register">
+		</form>
+    </div>
+
+{% endblock %}
