@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'uljcl!t4-9sgp!9^62u!izfz7l#&rnjc2have89h9#+^fwf+co'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['webinar.codegnan.com']
 
 
 # Application definition
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'webinar',
     'crispy_forms',
+    'phonenumber_field',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,3 +133,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'info@codegnan.com'
 EMAIL_HOST_PASSWORD = 'pheonix'
 EMAIL_USE_TLS = True
+
+PHONENUMBER_DB_FORMAT = 'NATIONAL'
+PHONENUMBER_DEFAULT_REGION = 'IN'
