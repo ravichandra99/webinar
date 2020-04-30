@@ -25,7 +25,7 @@ SECRET_KEY = 'uljcl!t4-9sgp!9^62u!izfz7l#&rnjc2have89h9#+^fwf+co'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['webinar.codegnan.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

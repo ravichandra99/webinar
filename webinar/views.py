@@ -11,11 +11,11 @@ class Index(FormView):
     success_url = '/thanks/'
 
     def form_valid(self, form):
-        to_mail = form.cleaned_data['email']
-        e = JustEdit.objects.get(ref = 'asdf')
-        sub = e.subject
-        msg = e.body
-        send_mail(sub ,msg ,'info@codegnan.com',[to_mail],fail_silently=False)
+        #to_mail = form.cleaned_data['email']
+        #e = JustEdit.objects.get(ref = 'asdf')
+        #sub = e.subject
+        #msg = e.body
+        #send_mail(sub ,msg ,'info@codegnan.com',[to_mail],fail_silently=False)
         form.save()
         return super().form_valid(form)
 
